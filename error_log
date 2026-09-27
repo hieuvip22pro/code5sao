@@ -1,0 +1,55 @@
+[23-Jul-2026 20:18:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taowebn2_apimm.item_images' doesn't exist in /home/taowebn2/imgdes.vipshoptech.com/index.php:32
+Stack trace:
+#0 /home/taowebn2/imgdes.vipshoptech.com/index.php(32): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 32
+[23-Jul-2026 20:30:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $plans in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 258
+[23-Jul-2026 20:31:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $plans in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 258
+[23-Jul-2026 20:31:52 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $plans in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 258
+[23-Jul-2026 20:42:32 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/taowebn2/imgdes.vipshoptech.com/index.php:38
+Stack trace:
+#0 /home/taowebn2/imgdes.vipshoptech.com/index.php(38): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 38
+[23-Jul-2026 20:42:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/taowebn2/imgdes.vipshoptech.com/index.php:38
+Stack trace:
+#0 /home/taowebn2/imgdes.vipshoptech.com/index.php(38): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 38
+[23-Jul-2026 20:58:46 Asia/Ho_Chi_Minh] PHP Fatal error:  Cannot redeclare get_code_listings() (previously declared in /home/taowebn2/imgdes.vipshoptech.com/index.php:15) in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 680
+[23-Jul-2026 20:58:47 Asia/Ho_Chi_Minh] PHP Fatal error:  Cannot redeclare get_code_listings() (previously declared in /home/taowebn2/imgdes.vipshoptech.com/index.php:15) in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 680
+[26-Jul-2026 19:34:57 Asia/Ho_Chi_Minh] PHP Warning:  require_once(/home/taowebn2/imgdes.vipshoptech.com/../config/config.php): Failed to open stream: No such file or directory in /home/taowebn2/imgdes.vipshoptech.com/wallet.php on line 2
+[26-Jul-2026 19:34:57 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Failed opening required '/home/taowebn2/imgdes.vipshoptech.com/../config/config.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/taowebn2/imgdes.vipshoptech.com/wallet.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/taowebn2/imgdes.vipshoptech.com/wallet.php on line 2
+[26-Jul-2026 19:34:59 Asia/Ho_Chi_Minh] PHP Warning:  require_once(/home/taowebn2/imgdes.vipshoptech.com/../config/config.php): Failed to open stream: No such file or directory in /home/taowebn2/imgdes.vipshoptech.com/wallet.php on line 2
+[26-Jul-2026 19:34:59 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Failed opening required '/home/taowebn2/imgdes.vipshoptech.com/../config/config.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/taowebn2/imgdes.vipshoptech.com/wallet.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/taowebn2/imgdes.vipshoptech.com/wallet.php on line 2
+[26-Jul-2026 19:35:21 Asia/Ho_Chi_Minh] PHP Warning:  require_once(/home/taowebn2/imgdes.vipshoptech.com/../config/config.php): Failed to open stream: No such file or directory in /home/taowebn2/imgdes.vipshoptech.com/wallet.php on line 2
+[26-Jul-2026 19:35:21 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Failed opening required '/home/taowebn2/imgdes.vipshoptech.com/../config/config.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/taowebn2/imgdes.vipshoptech.com/wallet.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/taowebn2/imgdes.vipshoptech.com/wallet.php on line 2
+[26-Jul-2026 19:35:21 Asia/Ho_Chi_Minh] PHP Warning:  require_once(/home/taowebn2/imgdes.vipshoptech.com/../config/config.php): Failed to open stream: No such file or directory in /home/taowebn2/imgdes.vipshoptech.com/wallet.php on line 2
+[26-Jul-2026 19:35:21 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Failed opening required '/home/taowebn2/imgdes.vipshoptech.com/../config/config.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/taowebn2/imgdes.vipshoptech.com/wallet.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/taowebn2/imgdes.vipshoptech.com/wallet.php on line 2
+[04-Aug-2026 11:46:16 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 188
+[04-Aug-2026 11:46:17 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 188
+[04-Aug-2026 11:46:27 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 188
+[04-Aug-2026 11:46:28 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 188
+[04-Aug-2026 11:46:30 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 188
+[04-Aug-2026 11:47:07 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 188
+[04-Aug-2026 11:47:11 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 188
+[04-Aug-2026 11:47:12 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 188
+[04-Aug-2026 11:47:22 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 188
+[04-Aug-2026 11:48:20 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 190
+[04-Aug-2026 11:48:21 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 190
+[04-Aug-2026 11:48:39 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 190
+[04-Aug-2026 11:48:59 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in /home/taowebn2/imgdes.vipshoptech.com/code_view.php on line 190
+[10-Aug-2026 20:19:50 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected fully qualified name "\vert" in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 484
+[10-Aug-2026 20:19:51 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected fully qualified name "\vert" in /home/taowebn2/imgdes.vipshoptech.com/index.php on line 484

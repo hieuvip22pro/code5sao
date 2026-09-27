@@ -1,0 +1,81 @@
+# ==============================================================
+# .htaccess - CodeMarket Root
+# ==============================================================
+
+# ---- PHP settings ----
+<IfModule lsapi_module>
+   php_value post_max_size 128M
+   php_value upload_max_filesize 128M
+   php_value memory_limit 512M
+</IfModule>
+
+<IfModule mod_php7.c>
+   php_value post_max_size 128M
+   php_value upload_max_filesize 128M
+   php_value memory_limit 512M
+</IfModule>
+
+# ---- Security: Chặn truy cập file nhạy cảm ----
+<FilesMatch "(^\.htaccess|error_log|database\.sql|composer\.lock|composer\.json|package\.json|package-lock\.json|\.env|config\.php)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# ---- Security: HTTP Headers ----
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "DENY"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    # HSTS (chỉ bật nếu site dùng HTTPS)
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# ---- Clean URLs: bỏ đuôi .php cho toàn site ----
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Sitemap XML chuẩn -> sitemap.php
+    RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+    # URL than thien cho trang code: /code/123-ten-code -> code_view.php?id=123
+    RewriteRule ^code/([0-9]+)(?:-[^/]*)?/?$ code_view.php?id=$1 [L,QSA]
+
+    # URL than thien cho blog: /blog/tieu-de-123 -> blog_post.php?id=123
+    RewriteRule ^blog/(?:[^/]*-)?([0-9]+)/?$ blog_post.php?id=$1 [L,QSA]
+
+    # Trang chủ: /index.php và /index -> /
+    RewriteCond %{REQUEST_METHOD} =GET
+    RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+    RewriteRule ^ / [R=301,L]
+    RewriteCond %{REQUEST_METHOD} =GET
+    RewriteRule ^index/?$ / [R=301,L]
+
+    # Bỏ đuôi .php khỏi thanh địa chỉ (chỉ với GET để không phá POST/AJAX)
+    RewriteCond %{REQUEST_METHOD} =GET
+    RewriteCond %{THE_REQUEST} \s/+([^.\s?]+)\.php[\s?] [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # Nội bộ ánh xạ URL không đuôi -> file .php tương ứng
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+    RewriteRule ^(.+?)/?$ $1.php [L]
+</IfModule>
+
+# ---- Security: Tắt directory listing ----
+Options -Indexes
+
+# ---- Security: Chặn truy cập thư mục ẩn (.git, .svn, ...) ----
+RedirectMatch 403 /\.git
+RedirectMatch 403 /\.svn
+RedirectMatch 403 /\.env
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “alt-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-alt-php82 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

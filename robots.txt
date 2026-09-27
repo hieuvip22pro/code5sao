@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Chan cac trang rieng tu / khong can index
+Disallow: /admin/
+Disallow: /wallet
+Disallow: /dashboard
+Disallow: /login
+Disallow: /register
+Disallow: /logout
+Disallow: /code_create
+Disallow: /code_edit
+Disallow: /topup_qr
+Disallow: /forgot_password
+Disallow: /reset_password
+Disallow: /verify_email
+
+# Sitemap (doi domain neu ban chuyen sang code5sao.com)
+Sitemap: https://code5sao.com/sitemap.xml
